@@ -1,18 +1,16 @@
 // GoRouter configuration
 import 'package:flutter/material.dart';
+import 'package:flutter_demo_app/pages/components/popular_movie_page.dart';
+import 'package:flutter_demo_app/pages/main_page.dart';
 import 'package:go_router/go_router.dart';
-
-import '../pages/home/home_page.dart';
-import '../pages/movie_detail_page.dart';
-import '../pages/popular_movie_page.dart';
-import '../widgets/about_url_lanucher_pkg.dart';
+import '../pages/components/movie_detail_page.dart';
 
 final GoRouter movieGoRouterConfig = GoRouter(
   routes: <RouteBase>[
     GoRoute(
       path: '/',
       builder: (BuildContext context, GoRouterState state) {
-        return const HomePage();
+        return const MainPage();
         // return const AboutUrlLauncherPkg();
       },
     ),

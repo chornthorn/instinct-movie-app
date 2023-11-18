@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo_app/pages/popular_movie_page.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../models/movie_model.dart';
 import '../../widgets/movie_card.dart';
-import '../movie_detail_page.dart';
+import '../components/movie_detail_page.dart';
+import '../components/popular_movie_page.dart';
 
 class HomeBodyWidget extends StatelessWidget {
   const HomeBodyWidget({super.key});

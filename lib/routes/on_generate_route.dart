@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo_app/pages/components/not_found_page.dart';
 
 import '../pages/home/home_page.dart';
-import '../pages/movie_detail_page.dart';
-import '../pages/not_found_page.dart';
-import '../pages/rating_page.dart';
+import '../pages/components/movie_detail_page.dart';
+import '../pages/components/rating_page.dart';
 
 Route<dynamic>? onGenerateRoute(settings) {
   switch (settings.name) {
