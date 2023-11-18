@@ -124,6 +124,7 @@ class MovieCard extends StatelessWidget {
               ),
             ],
           ),
+          Spacer(),
           Container(
             margin: EdgeInsets.symmetric(
               horizontal: 8,

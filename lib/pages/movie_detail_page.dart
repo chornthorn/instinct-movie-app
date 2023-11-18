@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:share_plus/share_plus.dart';
 
 class MovieDetailPage extends StatelessWidget {
   const MovieDetailPage({
@@ -37,29 +38,7 @@ class MovieDetailPage extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.share),
             onPressed: () {
-              showDialog(
-                context: context,
-                builder: (context) {
-                  return AlertDialog(
-                    title: Text('Share'),
-                    content: Text('Share this movie'),
-                    actions: [
-                      TextButton(
-                        child: Text('Cancel'),
-                        onPressed: () {
-                          Navigator.of(context).pop();
-                        },
-                      ),
-                      TextButton(
-                        child: Text('OK'),
-                        onPressed: () {
-                          Navigator.of(context).pop();
-                        },
-                      ),
-                    ],
-                  );
-                },
-              );
+              Share.share('https://example.com?dljflajsl');
             },
           ),
         ],

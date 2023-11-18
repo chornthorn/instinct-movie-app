@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'widgets/about_container.dart';
-import 'widgets/about_layout_widget.dart';
-import 'widgets/about_single_child_scroll_widget.dart';
-import 'widgets/about_text_field_widget.dart';
+import 'home_body_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -11,31 +8,10 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // endDrawer: Drawer(
-      //   child: Column(
-      //     children: [
-      //       Text("End Drawer"),
-      //     ],
-      //   ),
-      // ),
       drawer: Drawer(
         // width: double.infinity,
         child: Column(
-          // mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Text("Drawer"),
-            // Container(
-            //   height: 100,
-            //   width: 100,
-            //   color: Colors.indigo,
-            // ),
-            // DrawerHeader(
-            //   decoration: BoxDecoration(
-            //     color: Colors.blue,
-            //   ),
-            //   child: Text("Drawer Header"),
-            // ),
-
             UserAccountsDrawerHeader(
               decoration: BoxDecoration(
                 color: Colors.indigo,
@@ -113,7 +89,7 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.yellow,
       ),
       // body: AboutContainerWidget(),
-      body: AboutLayoutWidget(),
+      body: HomeBodyWidget(),
       bottomNavigationBar: BottomNavigationBar(
         // showSelectedLabels: false,
         // showUnselectedLabels: false,

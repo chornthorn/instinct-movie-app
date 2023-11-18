@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../home_page.dart';
+import '../pages/home/home_page.dart';
 import '../pages/movie_detail_page.dart';
 import '../pages/not_found_page.dart';
 import '../pages/rating_page.dart';
